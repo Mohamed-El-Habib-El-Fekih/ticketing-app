@@ -1,0 +1,118 @@
+.login-page {
+  min-height: 100vh;
+  background: #191B1F;
+  display: block;
+  display: flex;
+  flex-direction:row;
+  gap: 0px;
+}
+#connecter{
+    background-color: #1C8F6F;
+    color: white;
+    border-radius: 3%;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    font-size: 25px;
+    width: 220px;
+    margin-left: 30px;
+}
+#Creer{
+    background-color: #2B727E;
+    color: white;
+    border-radius: 3%;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    font-size: 23px;
+    width: 220px;
+}
+#right{
+    padding-top:5%;
+    padding-left: 23vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    border-left: solid 1px #374F89;
+    flex: 1; 
+}
+#seconnecter{
+    font-size: 40px;
+    color: white;
+}
+.Emailmdp{
+    color : #999999;
+    font-size: 2vh;
+    font-weight: lighter; 
+}
+.input{
+    background-color: #191B1F;
+    border: 1px solid #374F89;
+    height: 4vh;
+    width: 60%;
+    font-size: 2vh;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+#buttons{
+    margin-top: 2.5vh;
+    margin-left: 10.7vh;
+    border-radius: 5px;
+}
+#mdpoub{
+    margin-left: 44.2vh;
+    font-size: 2vh;
+    padding-top: 1vh;
+    cursor: pointer;
+}
+#text{
+    width: 60%;
+    text-align: center;
+    text-decoration-line: underline;
+    margin-top: 6vh;
+}
+#left{
+    width: 50%;
+}
+#text1{
+    color: #9E9E9E;
+    margin-left: 25%;
+    margin-top: 4%;
+    font-size: 3vh;
+}
+#text2{
+    margin-left: 25%;
+    color: #C9C9C9;
+    margin-top: 2%;
+    width: 65vh;
+    font-size: large;
+}
+#text3{
+    color: #878787;
+    margin-left: 25%;
+    margin-top: 15%;
+    font-size: 2.5vh;
+}
+#AS{
+    color: white;
+    font-weight: bolder;
+    font-size: 3vh;
+    background-color: #2B727E;
+    border-radius: 50%;
+    height: 7.8vh;
+    width: 7.8vh;
+    display: flex;
+    align-items: center;     
+    justify-content: center;
+}
+#AssistSphere{
+    font-size: 4.5vh;
+}
+#prof{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    color: #878787;
+    margin-left: 25%;
+    margin-top: 15%;
+}

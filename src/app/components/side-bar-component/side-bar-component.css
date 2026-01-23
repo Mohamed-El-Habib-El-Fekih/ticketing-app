@@ -1,0 +1,125 @@
+*{
+    color: white;
+
+}
+p{
+    font-size: 30px;
+    padding-left: 50px;
+}
+span{
+    font-size: medium;
+}
+img{
+    width: 40px;
+    height: 40px;
+}
+button{
+    background-color: #1e1e1e;
+    border: none;
+    cursor: pointer;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 200px;
+}
+button:hover{
+    background-color: #383838;
+    border-radius: 5px;
+}
+#General {
+    padding-top: 50px;
+}
+#Help{
+    margin-top: 130px;
+}
+#profil{
+    padding-top: 40px;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column; 
+  line-height: 1.2;
+}
+.profile-text .email {
+  font-size: 15px;
+  opacity: 0.8;
+  overflow-wrap: anywhere; 
+  word-break: break-word;
+}
+#profil span{
+    margin-left: 7px;
+}
+#title{
+    padding-top: 30px;
+    padding-right: 30px;
+}
+#title-box{
+    height: 120px;
+    width: 250px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+#list-cont{
+    width: 250px;
+    border-right: 1px solid white;
+    height: 95.5%;
+}
+#search{
+    background-color: #131518;
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+#input{
+    padding-left: 10px;
+    width: 415px;
+    height: 30px;
+    background-color: #131518;
+    border: none;
+    border-radius: 5px;
+}
+#search:hover{
+    border: 1.5px solid #D7DEE9;
+}
+#search img{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+#search input:focus{
+    outline: none;
+    border: none;
+}
+#layout{
+    display: flex;
+}
+#uppernav{
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+p{
+    margin: 0;
+}
+#images{
+    padding-top: 2%;
+    padding-left: 55%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}

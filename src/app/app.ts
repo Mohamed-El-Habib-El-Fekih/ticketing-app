@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { LoginPage } from './pages/login-page/login-page';
+import { SideBarComponent } from './components/side-bar-component/side-bar-component';
+import { TopNavComponent } from './components/top-nav-component/top-nav-component';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,LoginPage],
+  imports: [RouterOutlet,SideBarComponent,TopNavComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

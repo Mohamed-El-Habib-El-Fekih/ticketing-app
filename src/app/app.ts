@@ -3,9 +3,10 @@ import { RouterOutlet } from '@angular/router';
 import { SideBarComponent } from './components/side-bar-component/side-bar-component';
 import { TopNavComponent } from './components/top-nav-component/top-nav-component';
 import { DocPage } from './pages/doc-page/doc-page';
+import { LoginPage } from './pages/login-page/login-page';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,SideBarComponent,TopNavComponent,DocPage],
+  imports: [RouterOutlet,SideBarComponent,TopNavComponent,DocPage,LoginPage],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

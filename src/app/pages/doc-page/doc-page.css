@@ -1,10 +1,11 @@
-.page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+#page {
+  margin: 0;
 }
-
-.page-content {
-  flex: 1;
-  min-height: 0;
+app-top-nav-component {
+  height: 10vh;
+  width: 100vw;
+}
+side-bar-component {
+  width: 13vw;
+  height: 90vh;
 }

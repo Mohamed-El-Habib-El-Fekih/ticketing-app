@@ -1,0 +1,159 @@
+:host{
+    height: 100vh;
+    width: 100vw;
+    display: block;
+}
+.login-page {
+  height: 100%;
+  width: 100%;
+  background: #191B1F;
+  display: flex;
+  flex-direction:row;
+  gap: 0px;
+  margin: 0;
+  padding: 0;
+}
+#left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#left1{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+#AssistSphere{
+    font-size: xx-large;
+    color: white;
+}
+#right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: solid 1px #374F89;
+    width: 50%;
+}
+#right1{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+#text1{
+    color: #9E9E9E;
+    margin-top: 4%;
+    font-size: x-large;
+}
+#text2{
+    color: #C9C9C9;
+    margin-top: 2%;
+    font-size: large;
+    width: 70%;
+}
+#text3{
+    color: #878787;
+    margin-top: 10%;
+    font-size: large;
+}
+#AS{
+    color: white;
+    font-weight: bolder;
+    font-size: xxlarge;
+    background-color: #2B727E;
+    border-radius: 50%;
+    height: 7.8vh;
+    width: 7.8vh;
+    display: flex;
+    align-items: center;     
+    justify-content: center;
+}
+#prof{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    color: #878787;
+}
+.wrapper1{
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+}
+.text{
+    color: #999999;
+    font-size: large;
+}
+.inputi{
+    border: #374F89 1px solid;
+    border-radius: 5px;
+    background-color: #191B1F;
+    height: 3vh;
+    color: white;
+    width: 100%;
+    font-size: large;
+    padding-left: 1%;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+#Address{
+    width: 100%;
+}
+.wrapper2,.wrapper1{
+    margin-top: 5%;
+    width: 100%;
+}
+.divi{
+    width: 100%;
+}
+#profilePic {
+  display: none;
+}
+
+#profile-pic-label {
+  display: inline-block;
+  padding: 6px 16px;
+  border: 1px solid #374F89;
+  border-radius: 5px;
+  color: #999999;
+  background-color: #191B1F;
+  cursor: pointer;
+  font-size: medium;
+  transition: border-color 0.2s, color 0.2s;
+}
+label{
+    align-self: center;
+    margin-top: 5%;
+}
+#profile-pic-label:hover {
+  border-color: #5b7fd4;
+  color: white;
+}
+#btns{
+    display: flex;
+    flex-direction: row;
+    gap : 5%;
+    width: 100%;
+    justify-content: end;
+    margin-top: 2%;
+}
+button{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    padding-inline: 4%;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 120%;
+    cursor: pointer;
+}
+#button1{
+    background-color: #2B727E;
+}
+#button2{
+    background-color: #1C8F6F;
+}
+

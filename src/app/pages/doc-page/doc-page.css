@@ -11,3 +11,128 @@
   margin: 0;
   padding: 0;
 }
+#list{
+  background-color: #191B1F;
+  border: solid white 1px;
+  border-bottom: none;
+  width: 20vw;
+  height: 87vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+#content, #parent{
+  display: flex;
+  flex-direction: row;
+}
+#parent{
+  gap: 8%;
+  margin-left: 12%;
+  margin-top: 5%;
+}
+#Documents{
+  font-size: 190%;
+  color: white;
+}
+select{
+  font-size: large;
+  background-color: #3E4045;
+}
+svg{
+  color: white;
+}
+.component{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 5%;
+  width: 80%;
+  align-self: center;
+  padding: 2.5%;
+}
+
+#buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transform: translateX(8px);
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.component:hover{
+  border: 0.2px rgb(107, 106, 106) solid;
+  border-radius: 5px;
+  background-color: #2D3037;
+}
+.component:hover #buttons {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+#bt1,#bt2{
+  border-radius: 5px;
+  color: white;
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5vw;
+  height: 3.5vh;
+}
+#bt1{
+  background-color:  #1DB954;
+}
+#bt2{
+  background-color: #D64550;
+}
+#list2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+#info{
+  font-size: 120%;
+  color:white;
+}
+#information{
+  height: 87vh;
+  width: 67vw;
+  color: white;
+}
+#title{
+  font-size:xx-large;
+  margin-top: 5%;
+  font-weight:600;
+}
+#descrip{
+  margin-top: 2%;
+  font-size: large;
+  color: #B5B5B5;
+}
+#title , #descrip,#space{
+  margin-left: 5%;
+}
+#space{
+  margin-top: 2%;
+  width: 57vw;
+  height:60vh;
+  background-color: #1F2126;
+  font-size:x-large;
+  font-weight: 500;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+#space2{
+  background-color: black;
+  margin-top: 1%;
+  padding: 2%;
+  height: 82%;
+  width: 94%;
+  color: white;
+  font-size: medium;
+  font-weight: 500;
+}

@@ -25,7 +25,7 @@
 }
 img{
     height: 5vh;
-    width: 3vw;
+    width: 2.5vw;
     cursor: pointer;
     align-self: center;
 }
@@ -66,4 +66,5 @@ img{
     border: none;
     border-radius: 5px;
     color: white;
+    font-size: large;
 }

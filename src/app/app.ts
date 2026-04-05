@@ -5,9 +5,11 @@ import { TopNavComponent } from './components/top-nav-component/top-nav-componen
 import { DocPage } from './pages/doc-page/doc-page';
 import { LoginPage } from './pages/login-page/login-page';
 import { SignUp } from './pages/sign-up/sign-up';
+import { PageChef } from './pages/page-chef/page-chef';
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,SideBarComponent,TopNavComponent,DocPage,LoginPage,SignUp],
+  imports: [RouterOutlet,SideBarComponent,PageChef,TopNavComponent,DocPage,LoginPage,SignUp],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

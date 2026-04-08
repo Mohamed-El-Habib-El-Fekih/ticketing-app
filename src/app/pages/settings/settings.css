@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+#information{
+    display: flex;
+    flex-direction: row;
+    height: 87vh;
+    width: 100vw;
+}
+#content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #191B1F;
+    border-top: solid 1px white;
+    border-left: solid 1px white;
+    overflow-y: auto;
+    height: 100%
+}
+#header{
+    border-bottom: solid 1px white;
+}
+#Paramètres{
+    font-size: x-large;
+    color: white;
+    font-weight: 600;
+    padding: 2%;
+}
+#mid{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-left: 2%;
+    gap: 15px;
+}
+input{
+    width: 30%;
+    background-color: #161616;
+    border: 0.5px #434D7E solid;
+    padding: 8px;
+    color: white;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+label{
+    color: #8F8F8F;
+}
+#Profile{
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+}
+
+#upload-btn {
+  background-color: #1C718F;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 4px;
+  width: 10%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+#wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+#upload-btn:hover, #wrapper button:hover{
+  background-color: #2a2d33;
+}
+#wrapper button{
+    background-color: #1c8f35;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+    border: none;
+}

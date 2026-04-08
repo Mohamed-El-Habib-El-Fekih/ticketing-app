@@ -7,10 +7,11 @@ import { LoginPage } from './pages/login-page/login-page';
 import { SignUp } from './pages/sign-up/sign-up';
 import { PageChef } from './pages/page-chef/page-chef';
 import { Notif } from './pages/notif/notif';
+import { Settings } from './pages/settings/settings';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,SideBarComponent,PageChef,TopNavComponent,DocPage,LoginPage,SignUp,Notif],
+  imports: [RouterOutlet,SideBarComponent,PageChef,TopNavComponent,DocPage,LoginPage,SignUp,Notif,Settings],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

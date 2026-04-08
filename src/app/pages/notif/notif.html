@@ -1,0 +1,110 @@
+<div id="page">
+    <app-top-nav-component></app-top-nav-component>
+    <div id="content">
+        <side-bar-component></side-bar-component>
+        <div class="notifications-page">
+            <div class="notifications-header">
+                <div id="parent">
+                    <h1>Notifications</h1>
+
+                    <select class="notifications-filter">
+                    <option>Tous</option>
+                    <option>En attente</option>
+                    <option>Validé</option>
+                    <option>Rejeté</option>
+                    </select>
+                </div>
+            </div>
+
+  <div class="notifications-body">
+    <!-- Left list -->
+    <aside class="notifications-list-panel">
+      <div class="list-title">
+        <h2>Liste</h2>
+        <span>4</span>
+      </div>
+
+      <div class="notification-list">
+        <article class="notification-card active">
+          <div class="notification-card-top">
+            <h3>Nouvel utilisateur en attente</h3>
+            <span class="date">2025-11-10</span>
+          </div>
+          <p>
+            L'utilisateur nouvel.user (nouvel.user@example.com) a créé un compte
+            et attend validation.
+          </p>
+          <div class="notification-footer">
+            <span class="type">UserSignup</span>
+            <span class="status pending">En attente</span>
+          </div>
+        </article>
+
+        <article class="notification-card">
+          <div class="notification-card-top">
+            <h3>Nouvel utilisateur en attente</h3>
+            <span class="date">2025-11-05</span>
+          </div>
+          <p>
+            L'utilisateur nouvel.user (nouvel.user@example.com) a créé un compte
+            et attend validation.
+          </p>
+          <div class="notification-footer">
+            <span class="type">UserSignup</span>
+            <span class="status validated">Validé</span>
+          </div>
+        </article>
+
+        <article class="notification-card">
+          <div class="notification-card-top">
+            <h3>Nouveau ticket assigné</h3>
+            <span class="date">2025-11-01</span>
+          </div>
+          <p>Le ticket #432 a été assigné à vous.</p>
+          <div class="notification-footer">
+            <span class="type">Ticket</span>
+          </div>
+        </article>
+
+        <article class="notification-card">
+          <div class="notification-card-top">
+            <h3>Document téléchargé</h3>
+            <span class="date">2025-10-20</span>
+          </div>
+          <p>Sara a téléchargé "Onboarding-guide.pdf"</p>
+          <div class="notification-footer">
+            <span class="type">Document</span>
+          </div>
+        </article>
+      </div>
+    </aside>
+
+    <!-- Right detail panel -->
+    <section class="notification-detail-panel">
+      <div class="detail-header">
+        <h2>Nouvel utilisateur en attente</h2>
+        <p>2025-11-15 10:54 • Type: UserSignup</p>
+      </div>
+
+      <div class="detail-box">
+        <h3>Détails</h3>
+        <p>
+          L'utilisateur nouvel.user (nouvel.user@example.com) a créé un compte
+          et attend validation.
+        </p>
+
+        <div class="action-buttons">
+          <button class="btn reject">Rejeter</button>
+          <button class="btn validate">Valider</button>
+        </div>
+      </div>
+
+      <div class="history-box">
+        <h3>Historique / commentaires</h3>
+        <p>(Zone de commentaires pour chaque notification )</p>
+      </div>
+    </section>
+  </div>
+</div>
+    </div>
+</div>

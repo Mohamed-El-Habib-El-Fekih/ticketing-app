@@ -6,10 +6,11 @@ import { DocPage } from './pages/doc-page/doc-page';
 import { LoginPage } from './pages/login-page/login-page';
 import { SignUp } from './pages/sign-up/sign-up';
 import { PageChef } from './pages/page-chef/page-chef';
+import { Notif } from './pages/notif/notif';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,SideBarComponent,PageChef,TopNavComponent,DocPage,LoginPage,SignUp],
+  imports: [RouterOutlet,SideBarComponent,PageChef,TopNavComponent,DocPage,LoginPage,SignUp,Notif],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

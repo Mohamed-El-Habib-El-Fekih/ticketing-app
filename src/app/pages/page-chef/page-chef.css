@@ -48,6 +48,7 @@ svg{
   margin-top: 5%;
   width: 80%;
   padding: 20px;
+  cursor: pointer;
 }
 
 #buttons{
@@ -183,4 +184,7 @@ svg{
     min-width: 50px;
     max-width: 100%;
 
+}
+button{
+  cursor: pointer;
 }

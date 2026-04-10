@@ -1,8 +1,8 @@
 import { Component, NgModule } from '@angular/core';
 import { SideBarComponent } from '../../components/side-bar-component/side-bar-component';
 import { TopNavComponent } from '../../components/top-nav-component/top-nav-component';
-import { ChefService } from '../../services/chef-service';
-import { Chef } from '../../models/chef.model';
+import { LoginServices } from '../../services/login-services/login-services';
+import { Worker } from '../../models/worker.model';
 import { FormsModule } from '@angular/forms';
 import { NgModel } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -13,9 +13,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './page-chef.css',
 })
 export class PageChef {
-  service = new ChefService();
-  chefs = this.service.getChefs();
-  chefSelected: Chef | null = null;
+  service = new LoginServices();
+  workers = this.service.getWorkers();
+  workerSelected: Worker | null = null;
   isEditingNote = false;
   editedNote = '';
   getAvatarColor(letter: string): string {
@@ -27,21 +27,21 @@ export class PageChef {
     const index = letter.toUpperCase().charCodeAt(0) % colors.length;
     return colors[index];
   }
-  selectChef(chef: Chef) {
+  selectWorker(worker: Worker) {
     this.isEditingNote = false;
-    this.chefSelected = chef;
+    this.workerSelected = worker;
   }
-  editChef(chef: Chef, event: Event) {
+  editWorker(worker: Worker, event: Event) {
     event.stopPropagation();
-    this.chefSelected = chef;
-    this.editedNote = this.chefSelected!.Note;
+    this.workerSelected = worker;
+    this.editedNote = this.workerSelected!.Note;
     this.isEditingNote = true;
   }
   saveNote() {
-    this.chefSelected!.Note = this.editedNote;
+    this.workerSelected!.Note = this.editedNote;
     this.isEditingNote = false;
   }
-  deleteChef(chef: Chef) {
-    this.chefs = this.chefs.filter(c => c.CIN !== chef.CIN);
+  deleteWorker(worker: Worker) {
+    this.workers = this.workers.filter(w => w.CIN !== worker.CIN);
   }
 }

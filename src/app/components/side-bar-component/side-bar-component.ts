@@ -1,14 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { LoginServices } from '../../services/login-services/login-services';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'side-bar-component',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './side-bar-component.html',
   styleUrl: './side-bar-component.css',
 })
 export class SideBarComponent {
-  router : Router= new Router();
+  private router = inject(Router);
+  public service = inject(LoginServices);
   isMenuOpen = false
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
@@ -25,8 +27,8 @@ export class SideBarComponent {
   gotoSettings() {
     this.router.navigate(['/settings']);
   }
-  gotoChef() {
-    this.router.navigate(['/chef']);
+  gotoWorkers() {
+    this.router.navigate(['/workers']);
   }
   gototickets() {
     this.router.navigate(['/tickets']);

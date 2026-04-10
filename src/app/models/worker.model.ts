@@ -1,4 +1,4 @@
-export interface Chef {
+export interface Worker {
     CIN: string;
     nom: string;
     prenom: string;
@@ -7,4 +7,7 @@ export interface Chef {
     password: string;
     status: boolean;
     Note: string;
+    ImageSrc: string;
+    isAccpeted: boolean;
+    role: string;
 }

@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ChefService } from './chef-service';
+import { LoginServices } from './login-services';
 
-describe('ChefService', () => {
-  let service: ChefService;
+describe('LoginServices', () => {
+  let service: LoginServices;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ChefService);
+    service = TestBed.inject(LoginServices);
   });
 
   it('should be created', () => {

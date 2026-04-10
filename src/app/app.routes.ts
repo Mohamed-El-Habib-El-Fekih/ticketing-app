@@ -15,7 +15,7 @@ export const routes: Routes = [
     { path: 'tickets', component: PageTickets },
     { path: 'settings', component: Settings },
     { path: 'signup', component: SignUp },
-    { path: 'chef', component: PageChef },
+    { path: 'workers', component: PageChef },
     { path: 'conversation', component: Conversation },
     { path: '**', redirectTo: '' }
 ];

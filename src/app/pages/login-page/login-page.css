@@ -142,3 +142,8 @@
     gap: 2vh;
     color: #878787;
 }
+.error{
+    color: #FF4C4C;
+    font-size: 2vh;
+    margin-top: 1vh;
+}

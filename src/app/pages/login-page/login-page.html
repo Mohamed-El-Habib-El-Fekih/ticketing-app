@@ -21,13 +21,17 @@
         <div id="right1">
             <p id="seconnecter">Se Connecter</p>
             <p class="Emailmdp">Email</p>
-            <input type="text" class="input" placeholder="votre.email@exemple.com">
+            <input type="text" class="input" placeholder="votre.email@exemple.com" [(ngModel)]="email">
             <p class="Emailmdp">Mot de passe</p>
-            <input type="password" class="input" placeholder="••••••••••••••••">
+            <input type="password" class="input" placeholder="••••••••••••••••" [(ngModel)]="password">
+            @if(!islogin)
+            {
+                <div class="error">Email ou mot de passe incorrect</div>
+            }
             <div class="Emailmdp" id="mdpoub">Mot de passe oublié ?</div>
             <div id="buttons">
                 <button id="Creer" (click)="createAccount()">Créer un Compte</button>
-                <button id="connecter">Se Connecter</button>
+                <button id="connecter" (click)="login()">Se Connecter</button>
             </div>
             <div class="Emailmdp" id="text">En continuant, vous acceptez les conditions d'utilisation et la politique de confidentialité.</div>
         </div>

@@ -3,36 +3,36 @@
     <div id="content">
         <side-bar-component></side-bar-component>
         <div id="list">
-            <div id="Documents">Chefs</div>
+            <div id="Documents">Workers</div>
             <div id="list2" >
-            @for(chef of chefs; track chef.CIN){
-                <div class="component" (click)="selectChef(chef)">
-                    <div id="log" [style.backgroundColor]="getAvatarColor(chef.nom.charAt(0))">
-                        {{ chef.nom.charAt(0) }}{{ chef.prenom.charAt(0) }}
+            @for(worker of workers; track worker.CIN){
+                <div class="component" (click)="selectWorker(worker)">
+                    <div id="log" [style.backgroundColor]="getAvatarColor(worker.nom.charAt(0))">
+                        {{ worker.nom.charAt(0) }}{{ worker.prenom.charAt(0) }}
                     </div>
                     <div id="info">
-                        <div>{{ chef.nom }} {{ chef.prenom }}</div>
-                        <div>{{ chef.phone }}</div>
+                        <div>{{ worker.nom }} {{ worker.prenom }}</div>
+                        <div>{{ worker.phone }}</div>
                     </div>
                     <div id="buttons"> <!-- hothom fi ng if yodhorhrou ken lel admin -->
-                        <button id="bt1" (click)="editChef(chef,$event)">Edit</button>
-                        <button id="bt2" (click)="deleteChef(chef)">Delete</button>
+                        <button id="bt1" (click)="editWorker(worker,$event)">Edit</button>
+                        <button id="bt2" (click)="deleteWorker(worker)">Delete</button>
                     </div>
                 </div>
             }
             </div>
         </div>
-        @if(chefSelected){
+        @if(workerSelected){
             <div id="information">
                 <div id="title">
-                    <div id="log1" [style.backgroundColor]="getAvatarColor(chefSelected.nom.charAt(0))">{{ chefSelected.nom.charAt(0) }}{{ chefSelected.prenom.charAt(0) }}</div>
-                    <div>{{ chefSelected.nom }} {{ chefSelected.prenom }}</div>
+                    <div id="log1" [style.backgroundColor]="getAvatarColor(workerSelected.nom.charAt(0))">{{ workerSelected.nom.charAt(0) }}{{ workerSelected.prenom.charAt(0) }}</div>
+                    <div>{{ workerSelected.nom }} {{ workerSelected.prenom }}</div>
                 </div>
                 <div id="wrapper">
                     <div id="space">
                         <div id="coordinates">coordinates</div>
-                        <div id="information1">Email: {{ chefSelected.email }} <br>Téléphone: {{ chefSelected.phone }} 
-                            <br>Statut: @if(chefSelected.status){ Active} @else {Inactive}</div>
+                        <div id="information1">Email: {{ workerSelected.email }} <br>Téléphone: {{ workerSelected.phone }} 
+                            <br>Statut: @if(workerSelected.status){ Active} @else {Inactive}</div>
                     </div>
                     <div id="space">
                         <div id="coordinates">Historique <br>Tickets, commandes et interactions récentes s'afficheraient ici.</div>
@@ -41,7 +41,7 @@
                 <div id="space2">
                     Notes : <br>
                     @if (!isEditingNote) {
-                        <div>{{ chefSelected.Note }}</div>
+                        <div>{{ workerSelected.Note }}</div>
                     } @else {
                         <textarea [(ngModel)]="editedNote" (keydown.enter)="saveNote()"  [style.width]="(editedNote!.length + 1) + 'ch'" autofocus>
                         </textarea>

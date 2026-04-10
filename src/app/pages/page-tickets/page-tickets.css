@@ -21,15 +21,18 @@
   overflow-y: auto;
   scrollbar-width: thin;
 }
-#content{
+#content, #parent{
   display: flex;
   flex-direction: row;
 }
-#Documents{
-  font-size: xx-large;
-  color: white;
+#parent{
+  gap: 8%;
   margin-left: 12%;
   margin-top: 5%;
+}
+#Documents{
+  font-size: 190%;
+  color: white;
 }
 select{
   font-size: large;
@@ -43,11 +46,11 @@ svg{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  align-self: center;
-  gap: 10px;
+  gap: 5%;
   margin-top: 5%;
   width: 80%;
-  padding: 20px;
+  align-self: center;
+  padding: 2.5%;
 }
 
 #buttons{
@@ -93,22 +96,18 @@ svg{
   justify-items: center;
 }
 #info{
-  font-size: 100%;
-  width: 30%;
+  font-size: 120%;
   color:white;
 }
 #information{
-  width: 60vw;
+  height: 87vh;
+  width: 67vw;
   color: white;
 }
 #title{
   font-size:xx-large;
   margin-top: 5%;
   font-weight:600;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap : 15px;
 }
 #descrip{
   margin-top: 2%;
@@ -120,67 +119,62 @@ svg{
 }
 #space{
   margin-top: 2%;
-  width: 25vw;
-  height:15vh;
+  width: 57vw;
   background-color: #1F2126;
+  font-size:x-large;
   font-weight: 500;
-  padding-top: 2%;
-  padding-left: 2%;
+  padding: 2%;
 }
 #space2{
   background-color: black;
-  margin-top: 3%;
-  margin-left: 5%;
+  margin-top: 1%;
   padding: 2%;
-  height: auto;
-  min-height: 40%;
-  width: 88.5%;
+  height: 82%;
+  width: 94%;
   color: white;
   font-size: medium;
   font-weight: 500;
-  white-space: normal;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
 }
-#log , #log1{
-    border-radius: 100%;
-    padding : 15px;
-    font-size: x-large;
-    width: 4vw;
-    height: 4vw;
-    font-weight: 500;
-    color: white;
-    display: flex;   
-    align-items: center;
-    justify-content: center;
+#description{
+  color: #9A9A9A;
 }
-#log{
-    width: 3vw;
-    height: 3vw;
+#div1{
+  font-size: larger;
 }
-#log1{
-    padding: 2%;
+.row{
+  display: flex;
+  flex-direction: row;
 }
-#wrapper{
-    display: flex;
-    flex-direction: row;
+.row select{
+  height: 3vh;
+  margin-top: 5%;
+  margin-left: 5%;
 }
-#information1{
-    margin-top: 2%;
+#d2{
+  font-size: medium;
+  margin-top: 1%
 }
-#coordinates{
-    color:#999999;
-    font: 500;
+#secteur2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-left: 5%;
+  width: 57vw;
 }
-#space2 textarea{
-    background-color: #1F2126;
-    border: none;
-    width: auto;
-    border-radius: 6px;
-    color: white;
-    padding: 5px;
-    width: fit-content;
-    min-width: 50px;
-    max-width: 100%;
-
+#secteur3{
+  margin-left: 5%;
+  width: 57vw;
+  background-color: black;
+  padding: 1%;
+  margin-top: 2%;
+  min-height: 40%;
+}
+#sspace1 ,#sspace2{
+  background-color: black;
+  width: 40%;
+  padding: 2%;
+}
+#coloring{
+  color: #9A9A9A;
 }

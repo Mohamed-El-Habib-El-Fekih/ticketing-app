@@ -1,14 +1,19 @@
 <div id="list-cont">
     <p id="General">General</p>
-    <button><img src="/icons8-document.svg" alt="img not found"><span>Documents</span></button>
-    <button><img src="/icons8-manager-100.png" alt="img not found"><span>Agents</span></button>
-    <button><img src="/patron.png" alt="img not found"><span>Chefs</span></button>
-    <button><img src="/icons8-deux-tickets-100.png" alt="img not found"><span>Tickets</span></button>
-    <div id="Help"><button><img src="/icons8-support-en-ligne-100.png" alt="img not found"><span>Help Center</span></button></div>
-    <div><button><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot-icon lucide-bot"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg><span>AI assistant</span></button></div>
-    <div id="profil"><img src="/profil.jpg" width="40 px" height="40px" alt=""><div class="profile-text">
+    <button (click)="gotoDocs()"><img src="/icons8-document.svg" alt="img not found"><span>Documents</span></button>
+    <button (click)="gotoChef()"><img src="/patron.png" alt="img not found"><span>Chefs</span></button>
+    <button (click)="gototickets()"><img src="/icons8-deux-tickets-100.png" alt="img not found"><span>Tickets</span></button>
+    <div id="Help" (click)="gotoHelp()"><button><img src="/icons8-support-en-ligne-100.png" alt="img not found"><span>Help Center</span></button></div>
+    <div><button (click)="gotoAIAssistant()"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot-icon lucide-bot"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg><span>AI assistant</span></button></div>
+    <div id="profil" (click)="toggleMenu()"><img src="/profil.jpg" width="40 px" height="40px" alt=""><div class="profile-text">
         <div class="name">Habib El Fekih</div>
         <div class="email">habib.elfekih2004@gmail.com</div>
     </div>
     </div>
+    @if (isMenuOpen) {
+    <div class="dropdown">
+        <div class="dropdown-item" (click)="gotoSettings()">My Profile</div>
+        <div class="dropdown-item" (click)="logout()">Logout</div>
+    </div>
+    }
 </div>

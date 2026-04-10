@@ -59,12 +59,14 @@ button:hover {
 }
 
 #profil {
+    position: relative;
     margin-top: 10%;
     margin-left: 10%;
     width: 85%;
     display: flex;
     align-items: center;
     gap: 5%;
+    cursor: pointer;
 }
 
 .profile-text {
@@ -79,7 +81,25 @@ button:hover {
     overflow-wrap: anywhere;
     word-break: break-word;
 }
-
 .name {
     font-size: 120%;
+}
+.dropdown {
+  position: absolute;
+  bottom: 0;
+  left: 11vw;
+  background-color: #191B1F;
+  border: 1px solid white;
+  border-radius: 8px;
+  width: 150px;
+  padding: 10px 0;
+}
+.dropdown-item {
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #2A2D34;
 }
